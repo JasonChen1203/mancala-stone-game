@@ -26,8 +26,6 @@ public class StonesGameGUI implements ActionListener {
 	
 	/**
 	 * Constructor: creates the gameboard for the Stones game
-	 * Pre: the initial number of stones in each pit and the number of players are identified
-	 * Post: a board that creates the gameboard for the Stones Game
 	 */
 	public StonesGameGUI(int stoneNum, int playerNum) {
 		game = new StonesGame(stoneNum, playerNum);
@@ -229,9 +227,7 @@ public class StonesGameGUI implements ActionListener {
 
 	/**
 	 * Handle button-clicking events
-	 * Pre: Action event includes selecting the number of pits that the player wants to move;
 	 * It also includes going back to settings and explaining the rules
-	 * Post: It reacts to the player's clicking and move on with the game until the game is over
 	 */
 	public void actionPerformed(ActionEvent event) {
 		String eventName = event.getActionCommand();
