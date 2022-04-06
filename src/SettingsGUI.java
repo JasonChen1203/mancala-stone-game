@@ -21,8 +21,6 @@ public class SettingsGUI implements ActionListener {
 	
 	/**
 	 * Constructor: creates the settings board for the Stones game
-	 * Pre: None
-	 * Post: a board that let the user chooses the settings of the game is created
 	 */
 	public SettingsGUI() {
 		frame = new JFrame("Stones Game Settings");
@@ -103,9 +101,7 @@ public class SettingsGUI implements ActionListener {
 	
 	/**
 	 * Handle button-clicking events
-	 * Pre: Action event includes selecting the initial number of stones and the number of players;
 	 * It also includes the button that would start the actual game and the button for going back to the rules page
-	 * Post: the game moves on to the next page and closes the rules page
 	 */
 	public void actionPerformed(ActionEvent event) {
 		String eventName = event.getActionCommand();
