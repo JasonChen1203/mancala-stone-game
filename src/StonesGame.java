@@ -1,9 +1,3 @@
-/*
- * StonesGame.java
- * Programmer Name: Jason Chen
- * Course: ICS3U
- * Date: 01/06/2019
- */
 
 package Stones;
 
