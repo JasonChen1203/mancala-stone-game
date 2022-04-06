@@ -27,8 +27,6 @@ public class RulesGUI implements ActionListener {
 	
 	/**
 	 * Constructor: creates the rules board for the Stones Game
-	 * Pre: None
-	 * Post: a board that explains the rules of the Stones Game is created
 	 */
 	public RulesGUI(int num) {
 		frame = new JFrame("Stones Game Rules");
@@ -92,8 +90,6 @@ public class RulesGUI implements ActionListener {
 	
 	/**
 	 * Handle button-clicking events
-	 * Pre: Action event is Next
-	 * Post: the game moves on to the next page and closes the rules page if the action event "Next" is clicked
 	 */
 	public void actionPerformed(ActionEvent event) {
 		String eventName = event.getActionCommand();
