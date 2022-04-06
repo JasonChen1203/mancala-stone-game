@@ -5,7 +5,6 @@ package Stones;
  * This stimulates the Stones Game
  * It holds method that allows the game to be played, such as displaying the game board, 
  * letting the player choose which pit they want to move, and determining the winner
- * This class will also check the 2 rules of the Stones game
  *
  */
 public class StonesGame {
@@ -25,8 +24,7 @@ public class StonesGame {
 	
 	/**
 	 * Constructor
-	 * Pre: None
-	 * Post: player 1 and 2 is instantiated; other variables such as the number of stones, players, turns
+	 * player 1 and 2 is instantiated; other variables such as the number of stones, players, turns
 	 * and the decisions for the rules are instantiated as well
 	 */
 	public StonesGame(int numStones, int numPlayers) {
@@ -44,8 +42,6 @@ public class StonesGame {
 	
 	/**
 	 * Method returns whose player's turn it is
-	 * Pre: None
-	 * Post: returns which player's turn it is
 	 */
 	public int getTurn() {
 		return(turn);
@@ -54,8 +50,6 @@ public class StonesGame {
 	
 	/**
 	 * Method returns whether or not the game ends
-	 * Pre: None
-	 * Post: returns whether or not the game ends
 	 */
 	public boolean getGameEnd() {
 		return(gameEnd);
@@ -63,8 +57,6 @@ public class StonesGame {
 	
 	/**
 	 * Method returns the number of stones a player has
-	 * Pre: None
-	 * Post: returns the number of stones a player has
 	 */
 	public int getStoneNum(int pitNum, int player) {
 		if(player == 1) {
@@ -78,8 +70,6 @@ public class StonesGame {
 	
 	/**
 	 * Method returns the number of stones in a player's home bin
-	 * Pre: None
-	 * Post: returns the number of stones in a player's home bin
 	 */
 	public int getBinNum(int player) {
 		if(player == 1) {
@@ -93,8 +83,6 @@ public class StonesGame {
 	
 	/**
 	 * Method returns the optimal pit number for the AI to move
-	 * Pre: None
-	 * Post: best pit option for the AI is returned
 	 */
 	public int getOptimalMove() {
 		return(optimalPit);
@@ -102,8 +90,6 @@ public class StonesGame {
 	
 	/**
 	 * Method returns the winner of the Stones game
-	 * Pre: None
-	 * Post: the winner of the game is returned
 	 */
 	public int getWinner() {
 		return(winner);
@@ -113,8 +99,6 @@ public class StonesGame {
 	 * Manages the moves of the 2 players in the game
 	 * Determines where the stones will go
 	 * Special rules of the game are also taken into consideration through this method
-	 * Pre: None
-	 * Post: a player's move is successfully made, rules applied
 	 */
 	public void makeMove(int pitNum) {
 		if(turn == 1) {
@@ -320,8 +304,6 @@ public class StonesGame {
 	
 	/**
 	 * Method chooses and calculates the best move for the AI
-	 * Pre: None
-	 * Post: the best pit option for the AI is chosen
 	 */
 	public void moveAI() {
 		optimalMove1 = false;
@@ -381,8 +363,6 @@ public class StonesGame {
 	
 	/**
 	 * Check if the game ended or not
-	 * Pre: None
-	 * Post: determines whether or not the game would end
 	 */
 	public void gameCheck() {
 		if(player1.getPlayerPit(0) == EMPTY && player1.getPlayerPit(1) == EMPTY && player1.getPlayerPit(2) == EMPTY 
@@ -426,8 +406,6 @@ public class StonesGame {
 	
 	/**
 	 * Determine the winner of the Stones game
-	 * Pre: The game has already ended
-	 * Post: The game determines who is the winner of the game
 	 */
 	public void calculateWinner() {
 		if(playerNum == 2) {
