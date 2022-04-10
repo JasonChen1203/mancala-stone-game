@@ -7,7 +7,7 @@ import java.awt.*;
 import java.awt.event.*;
 
 /**
- * This will create the settings board of the Stones game
+ * create the settings board of the Stones game
  */
 public class SettingsGUI implements ActionListener {
 	final static String STONE_NUM_TEXT = "The initial number of stones in each of the pits: ";
@@ -101,7 +101,7 @@ public class SettingsGUI implements ActionListener {
 	
 	/**
 	 * Handle button-clicking events
-	 * It also includes the button that would start the actual game and the button for going back to the rules page
+	 * Also includes the button that would start the actual game and the button for going back to the rules page
 	 */
 	public void actionPerformed(ActionEvent event) {
 		String eventName = event.getActionCommand();
