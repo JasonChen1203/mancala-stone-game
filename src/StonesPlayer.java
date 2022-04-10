@@ -3,9 +3,7 @@
 package Stones;
 
 /**
- * This stimulates a player in the Stones game
- * It holds the methods to access player information such as the number of the pit that the player wants to move, 
- * the number of stones in each pit, and the number of stones in the player's home bin
+ * Simulates a player in the Stones game
  */
 
 public class StonesPlayer {
@@ -26,28 +24,28 @@ public class StonesPlayer {
 	}
 	
 	/**
-	 * Method returns the number of stones in one specific pit
+	 * returns the number of stones in one specific pit
 	 */
 	public int getPlayerPit(int pitNum) {
 		return(playerPit[pitNum]);
 	}
 	
 	/**
-	 * Method returns the number of stones in the home bin
+	 * returns the number of stones in the home bin
 	 */
 	public int getHomeBin() {
 		return(playerHomeBin);
 	}
 	
 	/**
-	 * Method takes all the stones in one particular pit
+	 * takes all the stones in one particular pit
 	 */
 	public void takeStones(int pitNum) {
 		playerPit[pitNum] = 0;
 	}
 	
 	/**
-	 * Method add each pit by 1 stone for a specific amount of stones, in this case the number of stones that are taken
+	 * add each pit by 1 stone for a specific amount of stones, in this case the number of stones that are taken
 	 */
 	public void addStones(int pitNum, int stoneNum) {
 		numStones = stoneNum;
@@ -66,7 +64,7 @@ public class StonesPlayer {
 	}
 	
 	/**
-	 * Method receives stones by adding each pit by 1 stone for a specific amount of stones
+	 * receives stones by adding each pit by 1 stone for a specific amount of stones
 	 */
 	public void receiveStones(int remainingStoneNum) {
 		int counter = 0;
@@ -79,7 +77,7 @@ public class StonesPlayer {
 	}
 	
 	/**
-	 * Method increases the number of stones in the home bin
+	 * increases the number of stones in the home bin
 	 */
 	public void addHomeBin(int num) {
 		playerHomeBin += num;
