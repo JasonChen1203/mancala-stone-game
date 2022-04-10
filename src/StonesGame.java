@@ -2,9 +2,7 @@
 package Stones;
 
 /**
- * This stimulates the Stones Game
- * It holds method that allows the game to be played, such as displaying the game board, 
- * letting the player choose which pit they want to move, and determining the winner
+ * Stimulates the Stones Game
  *
  */
 public class StonesGame {
@@ -24,8 +22,7 @@ public class StonesGame {
 	
 	/**
 	 * Constructor
-	 * player 1 and 2 is instantiated; other variables such as the number of stones, players, turns
-	 * and the decisions for the rules are instantiated as well
+	 * Initialize player 1 & 2
 	 */
 	public StonesGame(int numStones, int numPlayers) {
 		player1 = new StonesPlayer(numStones);
@@ -41,7 +38,7 @@ public class StonesGame {
 	}
 	
 	/**
-	 * Method returns whose player's turn it is
+	 * returns whose player's turn it is
 	 */
 	public int getTurn() {
 		return(turn);
@@ -49,14 +46,14 @@ public class StonesGame {
 	
 	
 	/**
-	 * Method returns whether or not the game ends
+	 * returns whether or not the game ends
 	 */
 	public boolean getGameEnd() {
 		return(gameEnd);
 	}
 	
 	/**
-	 * Method returns the number of stones a player has
+	 * returns the number of stones a player has
 	 */
 	public int getStoneNum(int pitNum, int player) {
 		if(player == 1) {
@@ -69,7 +66,7 @@ public class StonesGame {
 	}
 	
 	/**
-	 * Method returns the number of stones in a player's home bin
+	 * returns the number of stones in a player's home bin
 	 */
 	public int getBinNum(int player) {
 		if(player == 1) {
@@ -82,14 +79,14 @@ public class StonesGame {
 	}
 	
 	/**
-	 * Method returns the optimal pit number for the AI to move
+	 * returns the optimal pit number for the AI to move
 	 */
 	public int getOptimalMove() {
 		return(optimalPit);
 	}
 	
 	/**
-	 * Method returns the winner of the Stones game
+	 * returns the winner of the Stones game
 	 */
 	public int getWinner() {
 		return(winner);
@@ -98,7 +95,7 @@ public class StonesGame {
 	/**
 	 * Manages the moves of the 2 players in the game
 	 * Determines where the stones will go
-	 * Special rules of the game are also taken into consideration through this method
+	 * Special rules of the game are also taken into consideration
 	 */
 	public void makeMove(int pitNum) {
 		if(turn == 1) {
@@ -303,7 +300,7 @@ public class StonesGame {
 	}
 	
 	/**
-	 * Method chooses and calculates the best move for the AI
+	 * chooses and calculates the best move for the AI
 	 */
 	public void moveAI() {
 		optimalMove1 = false;
