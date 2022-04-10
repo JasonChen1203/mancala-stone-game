@@ -3,8 +3,8 @@ package Stones;
 
 
 /**
- * This simulates a two-player game called Stones
- * The game also features a one-player option with an AI
+ * Simulates a two-player game called Stones
+ * Features a one-player option with an AI
  */
 public class TestStones {
 	public static void main(String[] args) {
