@@ -6,7 +6,7 @@ import java.awt.*;
 import java.awt.event.*;
 
 /**
- * This will create the gameboard for the Stones game
+ * create the gameboard for the Stones game
  */
 public class StonesGameGUI implements ActionListener {
 	final static String SPACE = " ";
@@ -227,7 +227,7 @@ public class StonesGameGUI implements ActionListener {
 
 	/**
 	 * Handle button-clicking events
-	 * It also includes going back to settings and explaining the rules
+	 * includes going back to settings and explaining the rules
 	 */
 	public void actionPerformed(ActionEvent event) {
 		String eventName = event.getActionCommand();
