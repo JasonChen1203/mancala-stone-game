@@ -1,5 +1,5 @@
 # mancala-stone-game
-The Mancala game is a 2-player strategy board game that is played with small stones & pits and rows of pits. Versions of the game date back to the 7th century and it is one of the oldest games that is still played today. Here, I'll recreate the game.
+The Mancala game is a 2-player strategy board game that is played with small stones & pits and rows of pits. Versions of the game date back to the 7th century and it is one of the oldest games that is still played today. Here, I'll recreate the game using Java and also include a 1-player mode that features a moderate-difficulty CPU.
 
 
 ## Setup & Rules
@@ -13,6 +13,6 @@ The Mancala game is a 2-player strategy board game that is played with small sto
 
 Special Rules when distributing the stones:
 1. If the last stone lands in the player's home bin, the player gets another turn.
-2. If the last stone lands in an empty pit on the player's side of the board, the player takes all stones in the corresponding pit on the opponent's side and places them in the player's home bin
+2. If the last stone lands in an empty pit on the player's side of the board, the player takes all stones in the corresponding pit on the opponent's side and places them in the player's home bin.
 
 
